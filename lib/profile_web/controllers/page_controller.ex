@@ -6,4 +6,8 @@ defmodule ProfileWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+
+  def skills(conn, _params) do
+    render(conn, :skills)
+  end
 end

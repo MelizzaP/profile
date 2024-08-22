@@ -14,7 +14,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#FD4F00",
+        blue: {
+          light: "var(--stromboli-chess-club)",
+          dark: "var(--surf-camp)"
+        },
+        biege: {
+          light: "var(--mojave-gathering)",
+          dark: "var(--palo-santo)"
+        },
+        white: "var(--sky-walker)"
       }
     },
   },

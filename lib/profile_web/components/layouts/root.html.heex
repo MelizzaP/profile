@@ -4,14 +4,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
-    <.live_title suffix=" · Phoenix Framework">
-      <%= assigns[:page_title] || "Profile" %>
+    <.live_title suffix=" · Melissa Patterson">
+      <%= assigns[:page_title] || "Fullstack Software Engineer" %>
     </.live_title>
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
   </head>
-  <body class="bg-white">
+  <body class="bg-blue-dark text-white">
+    <nav class="relative z-10">
+      <div class="absolute mx-auto max-w-7xl px-2 inset-y-0 right-0">
+        <div class="flex h-16 items-center justify-end">
+          <div class="flex items-center">
+            <button id="menu-button" phx-click={JS.toggle(to: "#mobile-menu")|> JS.toggle(to: "#close-icon") |> JS.toggle(to: "#hamburger")} type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-biege-light hover:text-biege-dark hove:focus:outline-none hover:focus:ring-2 hover:focus:ring-inset hover:focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <svg id="hamburger" class="block h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg id="close-icon" class="hidden h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="hidden " id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2 bg-biege-dark text-biege-dark rounded-md">
+            <a href="/" class="block rounded-md bg-blue-dark px-3 py-2 text-base font-medium text-white hover:bg-blue-light hover:text-white">Home</a>
+            <a href="/skills" class="block rounded-md bg-blue-dark px-3 py-2 text-base font-medium text-white hover:bg-blue-light hover:text-white">Skills</a>
+            <a href="/experience" class="block rounded-md bg-blue-dark px-3 py-2 text-base font-medium text-white hover:bg-blue-light hover:text-white">Experience</a>
+            <a href="#" class="block rounded-md bg-blue-dark px-3 py-2 text-base font-medium text-white hover:bg-blue-light hover:text-white">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <%= @inner_content %>
   </body>
 </html>

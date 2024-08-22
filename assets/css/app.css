@@ -3,3 +3,18 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+
+:root {
+  /* light */
+  --super-moon: rgb(237, 240, 233);
+  --school-blazer-blue: rgb(58,83,103);
+  --saturday-on-a-sunday: rgb(88,115,118);
+
+  /* dark */
+  --surf-camp: rgb(43, 58, 71);
+  --sky-walker: rgb(200,217,213);
+  --mojave-gathering: rgb(191,185,173);
+  --palo-santo: rgb(229,218,192);
+  --stromboli-chess-club: rgb(150,172,232);
+}
+
