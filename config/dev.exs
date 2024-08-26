@@ -26,7 +26,8 @@ config :profile, ProfileWeb.Endpoint,
   secret_key_base: "C9DL4L37v06tCZPQRdaDcpPLVylv7EpR+61zFqS/hAWzaRG+qBck7kIY3JacGNmU",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:profile, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:profile, ~w(--watch)]}
+    tailwind: {Tailwind, :install_and_run, [:profile, ~w(--watch)]},
+    node: ["build.js", "--watch", cd: Path.expand("../assets", __DIR__)]
   ]
 
 # ## SSL Support
