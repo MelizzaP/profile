@@ -8,6 +8,6 @@ defmodule ProfileWeb.PageController do
   end
 
   def skills(conn, _params) do
-    render(conn, :skills)
+    render(conn, :skills, page_title: "Skills")
   end
 end
