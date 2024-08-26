@@ -18,3 +18,114 @@
   --stromboli-chess-club: rgb(150,172,232);
 }
 
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-Thin.otf");
+  font-weight: 100;
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-ExtraLight.otf");
+  font-weight: 200;
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-Light.otf");
+  font-weight: 300;
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-Regular.otf");
+  font-weight: 400;
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-SemiBold.otf");
+  font-weight: 500;
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-Bold.otf");
+  font-weight: 600;
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-ExtraBold.otf");
+  font-weight: 700;
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-Heavy.otf");
+  font-weight: 800;
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-ThinItalic.otf");
+  font-weight: 100;
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-ExtraLightItalic.otf");
+  font-weight: 200;
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-LightItalic.otf");
+  font-weight: 300;
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-Italic.otf");
+  font-weight: 400;
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-SemiBoldItalic.otf");
+  font-weight: 500;
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-BoldItalic.otf");
+  font-weight: 600;
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-ExtraBoldItalic.otf");
+  font-weight: 700;
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "OverpassNerdFont";
+  src: url("/fonts/Overpass/OverpassNerdFont-HeavyItalic.otf");
+  font-weight: 800;
+  font-style: "italic";
+}
