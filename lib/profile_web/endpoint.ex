@@ -8,7 +8,13 @@ defmodule ProfileWeb.Endpoint do
     store: :cookie,
     key: "_profile_key",
     signing_salt: "YhAUVyYr",
-    same_site: "Lax"
+    same_site: "Lax",
+    check_origin: [
+      "wss://melissapatterson.io",
+      "ws://melissapatterson.io",
+      "http://melissapatterson.io",
+      "https://melissapatterson.io"
+    ]
   ]
 
   socket "/live", Phoenix.LiveView.Socket,
