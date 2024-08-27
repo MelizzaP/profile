@@ -9,7 +9,7 @@ defmodule Profile.Experience do
     [
       %{
         company: "papa",
-        start_date: ~D[2023-10-01],
+        start_date: ~D[2022-10-01],
         end_date: ~D[2024-08-16],
         location: "Miami, Fl",
         remote: true,
@@ -28,7 +28,7 @@ defmodule Profile.Experience do
       %{
         company: "dscout",
         start_date: ~D[2019-09-01],
-        end_date: ~D[2023-10-01],
+        end_date: ~D[2022-10-01],
         location: "Chicago, Il",
         remote: true,
         title: "Lead Fullstack Engineer",
