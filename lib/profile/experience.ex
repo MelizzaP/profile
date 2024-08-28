@@ -86,6 +86,19 @@ defmodule Profile.Experience do
         ]
       },
       %{
+        company: "Opinionlab",
+        start_date: ~D[2015-04-01],
+        end_date: ~D[2015-12-01],
+        location: "Chicago, Il",
+        remote: false,
+        title: "Rails Developer",
+        tech_stack: ~w[Ruby Rails JavaScript HMTL XML PostgreSQL],
+        highlights: [
+          "Full stack engineer working primarily in Ruby on Rails.",
+          "Implemented recurring mailer feature, increasing web traffic."
+        ]
+      },
+      %{
         company: "US Air Force",
         start_date: ~D[2010-11-01],
         end_date: ~D[2014-11-01],
