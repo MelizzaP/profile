@@ -28,6 +28,7 @@ defmodule ProfileWeb.ExperienceLive do
       <ul class="flex justify-start flex-wrap gap-2 md:justify-between w-full border-y border-biege-dark my-4 p-1 text-biege-dark">
         <li :for={tech <- job.tech_stack}><%= tech %></li>
       </ul>
+      <p class="font-semibold my-4"><%= job.summary %></p>
       <ul class="flex flex-col gap-2 list-[square] leading-6 px-4 text-blue-light">
         <li :for={item <- job.highlights}><%= item %></li>
       </ul>
