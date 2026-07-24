@@ -15,10 +15,7 @@ defmodule ProfileWeb.ExperienceLive do
       <div class="flex md:flex-row flex-col md:items-center justify-between">
         <h3 class="text-2xl font-bold underline"><%= job.company %></h3>
         <div>
-          <%= Calendar.strftime(job.start_date, "%B, %Y") %> - <%= Calendar.strftime(
-            job.end_date,
-            "%B, %Y"
-          ) %>
+          <%= job.start_date.year %> - <%= if job.end_date, do: job.end_date.year, else: "Current" %>
         </div>
       </div>
       <div class="flex flex-col md:flex-row md:items-center justify-between">

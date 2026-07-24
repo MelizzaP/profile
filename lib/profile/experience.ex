@@ -8,16 +8,35 @@ defmodule Profile.Experience do
   def get do
     [
       %{
+        company: "Hatch",
+        start_date: ~D[2025-01-01],
+        end_date: nil,
+        location: "New York, NY",
+        remote: true,
+        title: "Senior AI Engineer",
+        tech_stack: ~w[Livekit Elixir Phoenix Kubernetes TypeScript React PostgreSQL],
+        summary:
+          "Led and significantly contributed to large feature releases, typically multi-person projects that cross team boundaries range in complexity, scale, and uncertainty. Contributor to the strategic direction, planning, and road map. Escalating issues and synthesizing feedback to ensure team success. Mentor to junior engineers.",
+        highlights: [
+          # "Architected the redesign of a tightly-coupled Elixir monolith into bounded domains, reducing regression risk and paving the way for incremental service extraction",
+          "Conceived and delivered a configurable TTS/STT/LLM vendor abstraction layer, cutting vendor evaluation time and directly enabling sales-demo wins and new product launches",
+          "Designed a fallback system for the voice pipeline (STT→LLM→TTS) with cross-vendor voice cloning, eliminating single-vendor outages as a point of failure",
+          "Pioneered a progressive-disclosure tool that dynamically resolves data at runtime instead of the system prompt, reducing context rot and improving response accuracy",
+          # "Invented a RAG pipeline (pgvector/Postgres) with an evaluation harness to serve FAQ/SOP content on demand, replacing static prompt injection",
+          "Originated a configurable framework for integrating third-party CRMs, directly contributing to new customer acquisition",
+          # "Championed observability practices across the platform, shifting incident detection ahead of customer reports"
+        ]
+      },
+      %{
         company: "papa",
         start_date: ~D[2022-10-01],
         end_date: ~D[2024-08-16],
         location: "Miami, Fl",
         remote: true,
-        title: "Senior Fullstack Engineer",
-        tech_stack:
-          ~w[Phoenix Elixir LiveView AWS Kubernetes React TypeScript GraphQL PostgreSQL Tailwind],
+        title: "Senior Full Stack Engineer",
+        tech_stack: ~w[Elixir Phoenix LiveView AWS Kubernetes TypeScript React GraphQL PostgreSQL],
         summary:
-          " Led and significantly contributed to large feature releases, typically multi-person projects that cross team boundaries range in complexity, scale, and uncertainty. Contributor to the strategic direction, planning, and road map. Escalating issues and synthesizing feedback to ensure team success. Mentor to junior engineers.",
+          "Led and significantly contributed to large feature releases, typically multi-person projects that cross team boundaries range in complexity, scale, and uncertainty. Contributor to the strategic direction, planning, and road map. Escalating issues and synthesizing feedback to ensure team success. Mentor to junior engineers.",
         highlights: [
           "Observability leader, instrumented monitoring for rapid identification and alerts to detect issues before users report them.",
           "Built a new user facing application with suite of new self service features in LiveView with a strong focus on accessibility for our target audience, seniors.",
@@ -26,7 +45,7 @@ defmodule Profile.Experience do
           "Trailblazer for LiveView architecture, infrastructure, and code standards for engineering organization.",
           "Collaborated closely with design stakeholder to build a fully accessible styleguide and base component library in LiveView.",
           "Advocated amongst peer and senior engineers for best practices in both Elixir and React codebases, mentored junior engineers through direct feedback, code review, and pair programming.",
-          "Stretched across organizational boundaries to build a prototype and propose an architecturual approach for a real-time collobaritive feature for support team to assist seniors in navigating the web."
+          "Stretched across organizational boundaries to build a prototype and propose an architectural approach for a real-time collaborative feature for support team to assist seniors in navigating the web."
         ]
       },
       %{
@@ -35,15 +54,15 @@ defmodule Profile.Experience do
         end_date: ~D[2022-10-01],
         location: "Chicago, Il",
         remote: true,
-        title: "Lead Fullstack Engineer",
-        tech_stack: ~w[Phoenix Elixir React JavaScript AWS Ruby Rails GraphQL PostgreSQL],
+        title: "Lead Full Stack Engineer",
+        tech_stack: ~w[Elixir Phoenix JavaScript TypeScript React AWS GraphQL PostgreSQL],
         summary:
           "Responsible for entire lifecycle of projects, design, development, and deployment. Improved code structure and architecture in order to improve testability and maintainability. Worked across domains to solve problems and escalate wider scoped issues as they arose. Mentored junior engineers through pair programing and direct feedback.",
         highlights: [
           "Engineering lead for team of 7, worked hand in hand with product lead.",
           "Mentored junior engineers by giving architecture guidance, setting expectations, and providing timely feedback.",
           "Identified key metrics to track team productivity and efficiency, allowing for more insightful and effective process improvements.",
-          "Intrumented vertical development delivery method enabling engineers to grow while improving efficiency and reducing knowledge silos.",
+          "Instrumented vertical development delivery method enabling engineers to grow while improving efficiency and reducing knowledge silos.",
           "Led company-wide continuous learning series and product demo."
         ]
       },
@@ -54,26 +73,12 @@ defmodule Profile.Experience do
         location: "Chicago, Il",
         remote: false,
         title: "Software Engineer",
-        tech_stack: ~w[React JavaScript Ruby Rails GraphQL PostgreSQL],
+        tech_stack: ["JavaScript", "React", "Ruby on Rails", "GraphQL", "Ramda", "Redux", "PostgreSQL"],
         summary: nil,
         highlights: [
           "Collaborated hand in hand with product to define and refine user needs.",
           "Introduced testing mindset, added unit testing to react components and automated linting. Improved code quality and a streamlined coding style.",
           "Architect of basic component library with design team to achieve consistently styled and accessible UI components."
-        ]
-      },
-      %{
-        company: "NextTier Education",
-        start_date: ~D[2017-03-01],
-        end_date: ~D[2017-10-01],
-        location: "Chicago, Il",
-        remote: false,
-        title: "Software Engineer",
-        tech_stack: ~w[Angular TypeScript Material Python Django PostgreSQL],
-        summary: nil,
-        highlights: [
-          "Individual contributor responsible for designing, shipping, and maintaining features.",
-          "Led feature projects."
         ]
       },
       %{
@@ -112,14 +117,13 @@ defmodule Profile.Experience do
         location: "San Antonio, Tx",
         remote: false,
         title: "Captain",
-        tech_stack: ~w[Lasers Physics Leadership Linux Bash],
-        summary:
-          "Commissioned officer responsible for evaluation, training, and acquisition of DoD lasers.",
+        tech_stack: ~w[Lasers Physics Leadership],
+        summary: nil,
         highlights: [
-          "Lead laser safety office for Air Force Research Lab, Air Force Materiel Command",
+          "Commissioned officer responsible for evaluation, training, and acquisition of DoD lasers.",
           "Lead laser safety office for Air Force Research Lab.",
           "Evaluated lasers and laser training ranges for acquisition by US Department of Defense.",
-          "Rigurous leadership training in a variety high pressure scenarios.",
+          "Rigorous leadership training in a variety high pressure scenarios.",
           "Melted a lot of things with lasers."
         ]
       }
