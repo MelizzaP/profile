@@ -18,13 +18,14 @@ defmodule Profile.Experience do
         summary:
           "Led and significantly contributed to large feature releases, typically multi-person projects that cross team boundaries range in complexity, scale, and uncertainty. Contributor to the strategic direction, planning, and road map. Escalating issues and synthesizing feedback to ensure team success. Mentor to junior engineers.",
         highlights: [
+          "Architected and implemented an org-wide MCP service, coordinating multiple teams to expose internal functionality to both internal and external MCP hosts, reducing customer onboarding friction and equipping support teams with richer agent tooling",
           "Led the effort to set standards for our legacy monolith, architecting a domain-driven design structure that made it easier to abstract unique services, test them in isolation, and scale the platform",
           "Conceived and delivered a configurable TTS/STT/LLM vendor abstraction layer, cutting vendor evaluation time and directly enabling sales-demo wins and new product launches",
           "Designed a fallback system for the voice pipeline (STT→LLM→TTS) with cross-vendor voice cloning, eliminating single-vendor outages as a point of failure",
           "Pioneered a progressive-disclosure tool that dynamically resolves data at runtime instead of the system prompt, reducing context rot and improving response accuracy",
           # "Invented a RAG pipeline (pgvector/Postgres) with an evaluation harness to serve FAQ/SOP content on demand, replacing static prompt injection",
           "Originated a configurable framework for integrating third-party CRMs, directly contributing to new customer acquisition",
-          # "Championed observability practices across the platform, shifting incident detection ahead of customer reports"
+          "Championed observability practices across the platform, shifting incident detection ahead of customer reports"
         ]
       },
       %{
