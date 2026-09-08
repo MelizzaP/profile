@@ -17,8 +17,9 @@ defmodule ProfileWeb.Router do
   scope "/", ProfileWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
-    get "/skills", PageController, :skills
+    live "/", ExperienceLive
+
+    get "/about", PageController, :about
 
     live "/experience", ExperienceLive
   end
